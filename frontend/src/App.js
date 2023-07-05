@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import Head from "./components/Head";
 import Footer from "./components/Footer";
+import HomeScreen from "./screens/HomeScreen";
 
 const App = () => {
   return (
@@ -8,7 +9,7 @@ const App = () => {
       <Head />
       <main className="py-3">
         <Container>
-          <h1>Welcome to Botanic Beauty</h1>
+          <HomeScreen />
         </Container>
       </main>
       <Footer />
