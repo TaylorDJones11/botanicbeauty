@@ -35,10 +35,7 @@ const Head = () => {
       <Navbar bg='dark' variant='dark' expand='md' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>
-              <img src={logo} alt='BotanicBeauty' />
-              BotanicBeauty
-            </Navbar.Brand>
+            <Navbar.Brand>BotanicBeauty</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav'></Navbar.Toggle>
           <Navbar.Collapse id='basic-navbar-nav'>

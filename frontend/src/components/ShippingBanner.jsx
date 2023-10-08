@@ -1,6 +1,6 @@
 const ShippingBanner = () => {
   return (
-    <p style={{ backgroundColor: '#FFF1DB', color: 'black' }}>
+    <p className='text-center text-bg-info py-2 fw-semibold'>
       FREE STANDARD SHIPPING ON ORDERS $40+
     </p>
   );
