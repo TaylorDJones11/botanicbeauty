@@ -7,6 +7,7 @@ import { useLogoutMutation } from '../slices/usersApiSlice';
 import { logout } from '../slices/authSlice';
 import logo from '../assets/logo.png';
 import { useDispatch } from 'react-redux';
+import ShippingBanner from './ShippingBanner';
 
 const Head = () => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -30,6 +31,7 @@ const Head = () => {
 
   return (
     <header>
+      <ShippingBanner />
       <Navbar bg='dark' variant='dark' expand='md' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>

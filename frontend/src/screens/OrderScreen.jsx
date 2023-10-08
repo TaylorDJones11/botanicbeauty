@@ -1,14 +1,6 @@
 import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import {
-  Row,
-  Col,
-  ListGroup,
-  Image,
-  Form,
-  Button,
-  Card,
-} from 'react-bootstrap';
+import { Row, Col, ListGroup, Image, Button, Card } from 'react-bootstrap';
 import { PayPalButtons, usePayPalScriptReducer } from '@paypal/react-paypal-js';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
@@ -18,7 +10,7 @@ import {
   useGetPayPalClientIdQuery,
 } from '../slices/ordersApiSlice';
 import { toast } from 'react-toastify';
-import { UseSelector, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 const OrderScreen = () => {
   const { id: orderId } = useParams();
@@ -59,7 +51,12 @@ const OrderScreen = () => {
         }
       }
     }
-  }, [order, paypal]);
+  }, [order, paypal, paypalDispatch, loadingPayPal, errorPaypal]);
+
+  function onApprove() {}
+  function onApproveTest() {}
+  function onError() {}
+  function createOrder() {}
 
   return isLoading ? (
     <Loader />
@@ -161,16 +158,18 @@ const OrderScreen = () => {
               {!order.isPaid && (
                 <ListGroup.Item>
                   {loadingPay && <Loader />}
+
                   {isPending ? (
                     <Loader />
                   ) : (
                     <div>
                       <Button
-                        onClick={onApproveTest}
                         style={{ marginBottom: '10px' }}
+                        onClick={onApproveTest}
                       >
                         Test Pay Order
                       </Button>
+
                       <div>
                         <PayPalButtons
                           createOrder={createOrder}
