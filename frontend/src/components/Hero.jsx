@@ -1,4 +1,5 @@
 import hero from '../assets/Hero1.jpg';
+import { Button } from 'react-bootstrap';
 import '../assets/styles/index.css';
 
 const Hero = () => {
@@ -10,6 +11,9 @@ const Hero = () => {
           <h2 className='text-overlay'>
             BEAUTY LIVES INSIDE YOU, SHOW IT TO THE WORLD
           </h2>
+          <Button type='button' className='btn-block'>
+            SHOP NOW
+          </Button>
         </div>
       </div>
     </div>

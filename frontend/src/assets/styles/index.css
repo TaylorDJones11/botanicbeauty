@@ -60,6 +60,7 @@ table th {
   overflow: hidden;
   position: relative;
 }
+
 .image-container::before {
   content: '';
   position: absolute;
@@ -74,4 +75,20 @@ table th {
   width: 100vw;
   height: 500px;
   object-fit: cover;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.text-overlay h2 {
+  margin: 0;
 }
