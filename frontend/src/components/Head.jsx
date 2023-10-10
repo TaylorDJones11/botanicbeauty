@@ -8,6 +8,7 @@ import { logout } from '../slices/authSlice';
 import logo from '../assets/logo.png';
 import { useDispatch } from 'react-redux';
 import ShippingBanner from './ShippingBanner';
+import Hero from './Hero';
 
 const Head = () => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -32,10 +33,16 @@ const Head = () => {
   return (
     <header>
       <ShippingBanner />
-      <Navbar bg='dark' variant='dark' expand='md' collapseOnSelect>
+      <Navbar
+        style={{ backgroundColor: '#FDFAFA' }}
+        expand='md'
+        collapseOnSelect
+      >
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>BotanicBeauty</Navbar.Brand>
+            <Navbar.Brand style={{ alignItems: 'center' }}>
+              BOTANIC BEAUTY
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav'></Navbar.Toggle>
           <Navbar.Collapse id='basic-navbar-nav'>
@@ -72,6 +79,7 @@ const Head = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Hero />
     </header>
   );
 };
