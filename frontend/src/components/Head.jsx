@@ -40,9 +40,7 @@ const Head = () => {
       >
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand style={{ alignItems: 'center' }}>
-              BOTANIC BEAUTY
-            </Navbar.Brand>
+            <Navbar.Brand>BOTANIC BEAUTY</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav'></Navbar.Toggle>
           <Navbar.Collapse id='basic-navbar-nav'>
