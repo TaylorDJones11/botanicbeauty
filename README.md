@@ -1,6 +1,11 @@
 # <h1 align="center">✨ Botanic Beauty ✨</h1>
 <p align="center">MERN Stack E-commerce Site</p>
+Figma File:
 <img width="1042" alt="Screenshot 2023-09-20 at 09 04 59" src="https://github.com/TaylorDJones11/botanicbeauty/assets/72883059/d1797eb2-dd4c-4332-ba75-086a62a17231">
+
+Current Project:
+![Ecommerce](https://github.com/TaylorDJones11/botanicbeauty/assets/72883059/a555308b-8a6e-47ea-af28-45bf0c4b0df7)
+
 
 
 ## <p align="center">🌐 Links 🌐</p>
