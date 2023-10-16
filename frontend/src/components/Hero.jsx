@@ -10,7 +10,7 @@ const Hero = () => {
           <h2 className='text-overlay'>
             BEAUTY LIVES INSIDE YOU, SHOW IT TO THE WORLD
           </h2>
-          <Button type='button' className='btn-block'>
+          <Button type='button' className='btn-block btn-overlay'>
             SHOP NOW
           </Button>
         </div>

@@ -90,6 +90,17 @@ table th {
   letter-spacing: 3px;
 }
 
+.btn-overlay {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  background-color: #f4f4f4;
+  border: none;
+}
+
 .text-overlay h2 {
   margin: 0;
 }
