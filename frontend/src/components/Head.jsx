@@ -5,7 +5,6 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { useLogoutMutation } from '../slices/usersApiSlice';
 import { logout } from '../slices/authSlice';
-import logo from '../assets/logo.png';
 import { useDispatch } from 'react-redux';
 import ShippingBanner from './ShippingBanner';
 import Hero from './Hero';
@@ -40,7 +39,7 @@ const Head = () => {
       >
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>BOTANIC BEAUTY</Navbar.Brand>
+            <Navbar.Brand className='brand-style'>BOTANIC BEAUTY</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav'></Navbar.Toggle>
           <Navbar.Collapse id='basic-navbar-nav'>

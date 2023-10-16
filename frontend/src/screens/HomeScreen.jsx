@@ -17,7 +17,7 @@ const HomeScreen = () => {
         </Message>
       ) : (
         <>
-          <h1>OUR BESTSELLERS</h1>
+          <h3 className='mt-5 fw-normal'>OUR BESTSELLERS</h3>
           <Row>
             {products.map((product) => (
               <Col key={product} sm={12} md={6} lg={4} xl={3}>
