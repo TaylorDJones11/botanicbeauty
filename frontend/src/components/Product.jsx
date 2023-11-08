@@ -1,6 +1,7 @@
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Rating from './Rating';
+import { FaItalic } from 'react-icons/fa';
 
 const Product = ({ product }) => {
   return (
@@ -15,6 +16,7 @@ const Product = ({ product }) => {
         >
           <Card.Title as='div' className='product-title'>
             <strong>{product.name}</strong>
+            <italic>${product.price}</italic>
             <p>{product.subname}</p>
           </Card.Title>
         </Link>
@@ -25,7 +27,11 @@ const Product = ({ product }) => {
             text={`${product.numReviews} reviews`}
           />
         </Card.Text>
-        <Card.Text as='h5'>${product.price}</Card.Text>
+
+        <Button type='button' className='btn-block'>
+          Add to Bag
+        </Button>
+        {/* <Card.Text as='h5'>${product.price}</Card.Text> */}
       </Card.Body>
     </Card>
   );
