@@ -28,7 +28,7 @@ const Product = ({ product }) => {
           />
         </Card.Text>
 
-        <Button type='button' className='btn-block'>
+        <Button type='button' className='btn-block' style={{ width: '95%' }}>
           Add to Bag
         </Button>
         {/* <Card.Text as='h5'>${product.price}</Card.Text> */}
