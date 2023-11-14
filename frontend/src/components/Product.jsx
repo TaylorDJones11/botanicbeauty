@@ -1,7 +1,6 @@
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Rating from './Rating';
-import { FaItalic } from 'react-icons/fa';
 
 const Product = ({ product }) => {
   return (
